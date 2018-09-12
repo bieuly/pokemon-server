@@ -7,5 +7,6 @@ export default class Routes {
 
     public routes(app): void {
         app.route('/').get(this.jsonPokemonController.getAll)
+        app.route('/id/:id').get(this.jsonPokemonController.getById)
     }
 }
